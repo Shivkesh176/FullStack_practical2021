@@ -1,1 +1,3 @@
-
+SNo.                  Assigned                Submitted
+1.Practical-1         10-08-21
+2.Practical-2         10-08-21
