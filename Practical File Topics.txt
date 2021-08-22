@@ -1,4 +1,6 @@
 SNo.                  Assigned                Submitted
 1.Practical-1         10-08-21                15-08-21
 2.Practical-2         10-08-21                15-08-21
-3.Practical-3
+3.Practical-3         19-08-21                
+4.Practical-4         19-08-21
+5.Practical-5         19-08-21
