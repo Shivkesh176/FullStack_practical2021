@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-7</title>
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box;}
+        .container{
+            width: 1200px;
+            margin: auto;
+        }
+        .header{
+            width: 100%;
+            height: 70px;
+            background-color: gray;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 25px;
+        }
+        .banner{
+            line-height: 100vh;
+            background-color: cadetblue;
+            width: 100%;
+            height: 100vh;
+            margin-bottom: 10px;
+            color: white;
+            line-height: 100vh;
+            text-align: center;
+            font-size: 30px;
+        }
+        .content{
+            height: 350px;
+            width: 100%;
+            margin-bottom:  10px;
+        }
+        .content1{
+            height: 350px;
+            width: 100%;
+            margin-bottom:  10px;
+            display: inline-flex;
+        }
+        .content::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .content1::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .left{
+            width: 50%;
+            height: 100%;
+            background-color: rgb(124, 84, 91);
+            float: left;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            padding-top: 150px;
+        
+        }
+        .right{
+            width: 48%;
+            height: 100%;
+            float: right;
+        }
+        
+        .navigation
+        {
+            width: 100%;
+            height: 110px;
+            background-color: orangered;
+            margin-bottom:  10px;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            padding-top: 40px;
+        }
+        .news{
+            width: 100%;
+            height: 110px;
+            background-color: orangered;
+            margin-bottom: 10px;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            padding-top: 40px;
+        }
+        .article{
+            width: 100%;
+            height: 110px;
+            background-color: orangered;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            padding-top: 40px;
+        }
+        .box{
+            width: 100%;
+            height: 300px;
+            display: inline-flex;
+        }
+        .first{
+            width: 25%;
+            height: 100%;
+            background-color: yellowgreen;
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .second{
+            width: 25%;
+            height: 100%;
+            background-color: yellowgreen;
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .third{
+            width: 25%;
+            height: 100%;
+            background-color: yellowgreen;
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .fourth{
+            width: 25%;
+            height: 100%;
+            background-color: yellowgreen;
+            float: left;
+            border-radius: 50%;
+        }
+        .rec1{
+            width: 25%;
+            height: 350px;
+            background-color: orangered;
+            margin-right: 20px;
+        }
+        .rec2{
+            width: 25%;
+            height: 350px;
+            background-color: orangered;
+            margin-right: 20px;
+        }
+        .rec3{
+            width: 25%;
+            height: 350px;
+            background-color: orangered;
+            margin-right: 20px;
+        }
+        .rec4{
+            width: 25%;
+            height: 350px;
+            background-color: orangered;
+        }
+        .footer{
+            width: 1200px;
+            height: 70px;
+            background-color: skyblue;
+            margin-bottom: 10px;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            padding-top: 20px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="banner">Banner</div><br>
+        <h2 style="text-align: center;">Section-1</h2><br>
+        <div class="box">
+            <div class="first"></div>
+            <div class="second"></div>
+            <div class="third"></div>
+            <div class="fourth"></div>
+        </div><br>
+        <h2 style="text-align: center;">Section-2</h2><br>
+        <div class="content">
+            <div class="left">Main Content</div>
+            <div class="right">
+                <div class="navigation">Article-1</div>
+                <div class="news">Article-2</div>
+                <div class="article">Article-3</div>
+            </div>
+        </div><br>
+        <h2 style="text-align: center;">Section-3</h2><br>
+        <div class="content1">
+                <div class="rec1"></div>
+                <div class="rec2"></div>
+                <div class="rec3"></div>
+                <div class="rec4"></div>
+        </div><br>
+        <h2 style="text-align: center;">Section-4</h2><br>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
