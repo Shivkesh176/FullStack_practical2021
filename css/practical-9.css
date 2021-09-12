@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    background-image: url('../Images/Bestpic.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 10px;
+    line-height: 100vh;
+    font-size: 30px;
+}
+.dropdown1{
+    display: none;
+}
+.menu ul li:hover .dropdown1{
+    display: block;
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    margin-top: 15px;
+    margin-left: 10px;
+
+}
+.menu ul li:hover .dropdown1 ul{
+    display: block;
+}
+.menu ul li:hover .dropdown1 ul li{
+    background: transparent;
+    border-bottom: 1px solid goldenrod;
+    width: 150px;
+}
+.menu ul li:hover .dropdown1 ul li a:hover{
+    color: goldenrod;
+}
+.first{
+    background-image: url('../Images/ppic1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 100vh;
+}
+.second{
+    background-image: url('../Images/ppic2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 100vh;
+}
+.third{
+    background-image: url('../Images/ppic3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 100vh;
+}
+.fourth{
+    background-image: url('../Images/ppic4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 100vh;
+}
+.navigation{
+    background-image: url('../Images/ppic5.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 100vh;
+}
+.news{
+    background-image: url('../Images/ppic6.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 100vh;
+}
+.article{
+    background-image: url('../Images/ppic7.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 100vh;
+}

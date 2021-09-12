@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/practical-9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Practical-9</title>
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box;}
+        .container{
+            width: 1200px;
+            margin: auto;
+        }
+        .menu{
+            width: 100%;
+            height: 90px;
+            background-color: gray;
+            margin: auto;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 25px;
+            position: sticky;
+            top: 0;
+        }
+        .menu ul{
+            list-style: none;
+            display: inline-flex;
+            color: white;
+        }
+        .menu ul li{
+            width: 200px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .menu ul li a{
+            text-decoration: none;
+            text transform: UpperCase;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .menu ul li:hover, .active{
+            background-color: goldenrod;
+        }
+        .content{
+            height: 350px;
+            width: 100%;
+            margin-bottom:  10px;
+        }
+        .content1{
+            height: 350px;
+            width: 100%;
+            margin-bottom:  10px;
+            display: inline-flex;
+        }
+        .content::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .content1::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .left{
+            width: 50%;
+            height: 100%;
+            background-color: rgb(124, 84, 91);
+            float: left;
+            text-align: justify;
+            color: white;
+            font-size: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .right{
+            width: 48%;
+            height: 100%;
+            float: right;
+        }
+        
+        .navigation
+        {
+            width: 100%;
+            height: 110px;
+            background-color: orangered;
+            margin-bottom:  10px;
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            padding: 5px;
+        }
+        .news{
+            width: 100%;
+            height: 110px;
+            background-color: orangered;
+            margin-bottom: 10px;
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            padding-bottom: 5px;
+        }
+        .article{
+            width: 100%;
+            height: 110px;
+            background-color: orangered;
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            padding-top: 5px;
+        }
+        .box{
+            width: 100%;
+            height: 300px;
+            display: inline-flex;
+        }
+        .first{
+            width: 25%;
+            height: 100%;
+            background-color: yellowgreen;
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .second{
+            width: 25%;
+            height: 100%;
+            background-color: yellowgreen;
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .third{
+            width: 25%;
+            height: 100%;
+            background-color: yellowgreen;
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .fourth{
+            width: 25%;
+            height: 100%;
+            background-color: yellowgreen;
+            float: left;
+            border-radius: 50%;
+        }
+        .poly{
+            width: 25%;
+            height: 350px;
+            background-color: orangered;
+            margin-right: 20px;
+        }
+        .poly{
+            width: 25%;
+            height: 350px;
+            background-color: orangered;
+            margin-right: 20px;
+        }
+        .poly{
+            width: 25%;
+            height: 350px;
+            background-color: orangered;
+            margin-right: 20px;
+        }
+        .poly{
+            width: 25%;
+            height: 350px;
+            background-color: orangered;
+        }
+        .poly{
+            height: 330px;
+            width: 25%;
+            overflow: hidden;
+            text-align: center;
+            border: 3px solid black;
+            padding: 10px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+        .poly{
+            text-align: justify;
+        }
+        .poly img{
+            margin-bottom: 5px;
+        }
+        #box1{
+            background-color: yellowgreen;
+        }
+        #box2{
+            background-color: chartreuse;
+        }
+        #box3{
+            background-color: coral;
+        }
+        #box4{
+            background-color: darkgreen;
+        }
+        #box1 img{
+            width: 250px;
+            height: 100px;
+            border-radius: 20px;
+        }
+        #box4 img{
+            width: 250px;
+            height: 100px;
+            border-radius: 20px;
+        }
+        #box3 img{
+            width: 250px;
+            height: 100px;
+            border-radius: 20px;
+        }
+        #box2 img{
+            width: 250px;
+            height: 100px;
+            border-radius: 20px;
+        }
+        .poly h3{
+            margin-left: 40px;
+        }
+        .mybutton{
+            display: block;
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+            background-color: red;
+            padding: 10px 10px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .mybutton:hover{
+            background-color: blue;
+        }
+        .footer{
+            width: 1200px;
+            height: 70px;
+            background-color: skyblue;
+            margin-bottom: 10px;
+            color: rgb(85, 30, 8);
+            text-align: center;
+            font-size: 25px;
+            padding-top: 20px;
+        }
+        .menu li a,.show-btn:hover,.hide-btn:hover{
+            color: rgb(6, 214, 6);
+        }
+        .show-btn, .hide-btn{
+            font-size: 30px;
+            color: white;
+            line-height: 90px;
+            transition: .4s;
+            display: none;
+        }
+        #check{
+            position: absolute;
+            visibility: hidden;
+            z-index: -10;
+        }
+        @media screen and (max-width: 830px) {
+            .container{
+                width: 100vw;
+            }
+            .footer{
+                width: 100vw;
+            }
+            .show-btn, .hide-btn{
+                display: block;
+            }
+            .show-btn{
+                float: right;
+                margin-right: 10px;
+            }
+            .list{
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 100vh;
+                right: -100%;
+                background-color: grey;
+                text-align: center;
+                line-height: normal;
+                transition: .7s;
+                padding-top: 120px;
+                padding-left: 20px;
+                padding-bottom: 370px;
+            }
+            #check:checked ~ .list{
+                right: 0;
+            }
+            .list li{
+                display: block;
+            }
+            .list li a{
+                display: block;
+            }
+            .hide-btn{
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+        <input type="checkbox" id="check">
+        <label for="check" class="show-btn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul class="list">  
+        <li class="active">
+            <a href="#ghar" style="color: white;">Home</a>
+        </li>
+        <li>
+            <a href="#abtus"></>About Us</a>
+        </li>
+        <li>
+            <a href="#tech"></>Technologies</a>
+        </li>
+        <li>
+            <a href="#cont">Contact</a>
+            <div class="dropdown1"><ul>
+                <li class="shiv">
+                    <a href="#">Shivkesh Yadav</a>
+                </li>
+            </div>
+        </li>
+        <label for="check" class="hide-btn">
+            <i class="fa fa-times"></i>
+        </label>
+        </ul>
+    </div><br>
+        <div class="banner" id="ghar"></div><br>
+        <h2 style="text-align: center;">Team Members</h2><br>
+        <div class="box">
+            <div class="first"></div>
+            <div class="second"></div>
+            <div class="third"></div>
+            <div class="fourth"></div>
+        </div><br>
+        <h2 style="text-align: center;" id="abtus">About Us</h2><br>
+        <div class="content">
+            <div class="left"><h2 style="color: black;">About Project</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur maiores consequuntur sapiente ullam qui, eum laudantium illo quaerat, aperiam maxime voluptatum. Facilis optio recusandae nemo sit, sapiente excepturi? Quos, magni blanditiis? Illum molestiae odio quo sapiente, itaque voluptatibus id nostrum similique quam quisquam atque voluptates! Est fugit doloribus odit sequi ipsam nostrum in consectetur nulla, accusamus sit quae voluptas porro ratione animi. Laborum sunt, minima placeat nostrum tempora accusantium, mollitia dolorum possimus sapiente nihil ipsam in quidem, neque nisi hic iure ducimus odio tempore aliquam corrupti quas. Quis dicta quam eveniet earum, dolore eum perferendis beatae tempore nemo, deleniti inventore ad eos voluptates consequuntur obcaecati error optio perspiciatis et incidunt? Maiores, cum. Cupiditate ad aliquam officia! Modi non nesciunt repudiandae cupiditate unde. Molestias expedita quae dolorem inventore voluptates quas ea officiis magni, eos ratione vel, ab ipsa voluptas facere cupiditate reiciendis veniam, perferendis aliquam sit modi in itaque odit vero. Amet laudantium provident dolor veniam numquam tempore quo consectetur reprehenderit, porro minima odio quia accusantium ducimus tenetur, quam voluptas vitae error. Sapiente reprehenderit voluptates pariatur excepturi? Officiis debitis placeat sit libero reprehenderit ex nisi nulla aspernatur odio doloribus excepturi dolores iusto adipisci ad, mollitia aperiam sint quo, accusamus rerum iste eos, exercitationem earum. Reprehenderit harum similique doloremque ab consequuntur voluptates obcaecati maiores fuga corporis, porro explicabo nulla? Quia voluptate ipsum et blanditiis nemo vitae commodi aperiam, debitis, quidem eligendi saepe pariatur, at natus distinctio. Quo itaque quasi numquam sequi nostrum placeat inventore eum sed, delectus animi magni aspernatur, totam quod?</p></div>
+            <div class="right">
+                <div class="navigation"></div>
+                <div class="news"></div>
+                <div class="article"></div>
+            </div>
+        </div><br>
+        <h2 style="text-align: center;" id="tech">Technologies Used</h2><br>
+        <div class="content1">
+                <div class="poly" id="box1">
+                    <div class="image">
+                    <img src="../Images/HTMLpic.jpg">
+                </div>
+                <h3>Introduction to HTML</h3>
+                <p style="text-align: justify;">HTML stands for Hypertext Markup Language and it is the most widely used language to write Web Pages.
+                    Hypertext refers to the way in which Web pages(HTML documents) are linked together.Thus the link available
+                    on a webpage is called Hypertext.
+                </p>
+                <a href="./practical-5-HTML.html" target="blank" class="mybutton" >Read More</a></div>
+                <div class="poly" id="box2">
+                    <div class="image">
+                    <img src="../Images/CSSpic.jpg">
+                </div>
+                <h3>Introduction to CSS</h3>
+                <p style="text-align: justify;">Cascading Style Sheets, fondly known as CSS, is a simply designed language intended to simplify the process
+                    of making web pages presentable.CSS allows you to apply styles to web pages.More importantly, CSS enables
+                    you to do this independent of the HTML.
+                </p>
+                <a href="./practical-5-CSS.html" target="blank" class="mybutton">Read More</a></div>
+                <div class="poly" id="box3">
+                    <div class="image">
+                    <img src="../Images/JSpic.jpg">
+                </div>
+                <h3>Introduction to Javascript</h3>
+                <p style="text-align: justify;">JavaScript is a lightweight, interpreted programming languages.It is designed 
+                    for creating network-centric applications. It is very easy to implement because it is integrated with HTML.It is open and cross-platform.
+                    It gives user the best Graphical User Experience.
+                </p>
+                <a href="./practical-5-JS.html" target="blank" class="mybutton">Read More</a></div>
+                <div class="poly" id="box4">
+                    <div class="image">
+                    <img src="../Images/BOOTSTRAPpic.jpg">
+                </div>
+                <h3>Introduction to Bootstrap</h3>
+                <p style="text-align: justify;">Bootstrap is a potent front-end framework used to create modern websites and web apps. It is a free and
+                    open-source CSS framework directed at responsive, mobile-first front-end web development.It contains 
+                    CSS and JS based design templates & buttons.
+                </p>
+                <a href="./practical-5-Bootstrap.html" target="blank" class="mybutton">Read More</a></div>
+        </div><br>
+        <h2 style="text-align: center;" id="cont">Contact</h2><br>
+        <div class="footer">Shivkesh Yadav</div>
+    </div>
+</body>
+</html>
