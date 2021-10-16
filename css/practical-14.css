@@ -1,0 +1,39 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+body{
+    background-color: rgb(102, 94, 94);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+h1{
+    font-size: 70px;
+    color: white;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 60px;
+}
+h2{
+    margin: 0 50px;
+    font-size: 50px;
+}
+button{
+    width: 70px;
+    height: 50px;
+    outline: none;
+    border-style: none;
+    font-size: 50px;
+    background-color: #acda42;
+    box-shadow: 8px 8px 20px;
+}
+button:hover{
+    background-color: dodgerblue;
+    border-color:  #000;
+}
