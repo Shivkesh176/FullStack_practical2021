@@ -31,13 +31,13 @@ function checkInputs() {
     }
 
     if(passwordValue === ''){
-        setErrorFor(password, 'Password cannot be blank');
+        setErrorFor(password, 'Password1 cannot be blank');
     } else {
         setSuccessFor(password);
     }
 
     if(password2Value === ''){
-        setErrorFor(password2, 'Password cannot be blank');
+        setErrorFor(password2, 'Password2 cannot be blank');
     } else if(passwordValue != password2Value){
         setErrorFor(password2, 'Passwords does not match');
     }else {
